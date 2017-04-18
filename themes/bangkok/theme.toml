@@ -1,0 +1,9 @@
+name = "Bangkok"
+description = "Bangkok is a bad name to give to a template"
+tags = ["portfolio"]
+features = ["portfolio"]
+min_version = 0.1
+
+[author]
+    name = "Pierre Lespingal"
+    homepage = ""

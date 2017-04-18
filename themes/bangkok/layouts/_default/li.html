@@ -1,0 +1,18 @@
+<a class="anchor"></a>
+
+<div class="item-wrapper">
+  <a href="{{ .Permalink }}">
+    <div class="item">
+      <div class="item-title">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="item-abstract">
+        <p>{{ .Params.abstract }}</p>
+      </div>
+      <div class="item-thumbnail" style="background-image: url({{ $.Site.BaseURL }}/images/thumbnail/{{ with .Params.thumbnail }}{{ . }}{{ else }}default.jpg{{ end }});">
+      </div>
+      <div class="item-logos">
+      </div>
+    </div>
+  </a>
+</div>

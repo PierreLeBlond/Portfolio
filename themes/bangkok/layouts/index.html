@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+<section>
+
+  <div class="cover">
+    <a name="main"></a>
+
+    <h1 class="headline"> This is not <br> a site <br> about <br> Monkeys </h1>
+
+  </div>
+
+  <div>
+
+    {{- range .Data.Pages -}}
+
+    {{- .Render "li" }}
+
+    {{- end }}
+
+  </div>
+
+</section>
+
+{{ partial "footer.html" . }}
