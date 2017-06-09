@@ -1,0 +1,274 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    min-height: 100%; /* to achieve sticky footer */
+}
+
+.Container
+{
+    position: relative;
+    min-height: 100%; /* to achieve sticky footer */
+
+    &-header {
+        width: 15%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+}
+
+/* Small hack to fix height relative to width */
+/* One should override margin-top value to change the ratio w/h */
+
+.ratio-wrapper
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.ratio-wrapper:before
+{
+    display: block;
+    content: "";
+    margin-top: 60%;
+}
+
+.ratio-box
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/****************************************************************/
+
+.Header
+{
+    &-profilPicture {
+        height: 100%;
+        width: 60%;
+        margin: auto;
+        margin-top: 21%;
+    }
+
+    &-nav {
+        width: 80%;
+        margin: auto;
+        margin-top: 50%;
+        height: 40%;
+    }
+
+    &-socialLinks
+    {
+        position: relative;
+        padding-top: 20%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.Nav
+{
+    &-li {
+        margin-bottom: 20%;
+    }
+}
+
+.NavLink
+{
+    & p { /* Not recommended, but yeah, the html would be really dirty */
+        display: inline-block;
+    }
+
+    /* Menu effect on letter */
+    &-specialLetter
+    {
+        transition: margin-left 0.3s, margin-right 0.3s;
+        transition-timing-function: linear;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    &-text:hover &-specialLetter
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /***************************/
+}
+
+.SocialLinks
+{
+    &-li {
+        display: inline-block;
+        width: 48%;
+    }
+
+    &-icon {
+        height: 5vh;
+    }
+}
+
+.Main
+{
+    position: relative;
+    width: 85%;
+    left: 15%;
+    padding-bottom: 10vh;
+}
+
+.Cover
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.Bubble
+{
+    position: absolute;
+    width: 10%;
+
+    &-picture {
+        height: 100%;
+        width: 60%;
+        margin: auto;
+    }
+
+    &-label {
+        margin-top: 10%;
+    }
+}
+
+.Item
+{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+    &-title {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        height: 20%;
+        width: 40%;
+    }
+
+    &-abstract {
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        height: 40%;
+        width: 40%;
+    }
+
+    &-thumbnail {
+        position: absolute;
+        left: 55%;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+    }
+
+    &-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-link {
+        position: absolute;
+        left: 10%;
+        top: 70%;
+        width: 30%;
+        height: 5vh;
+        line-height: 5vh;
+    }
+}
+
+.Item.right {
+
+    .Item-title {
+        left: 55%;
+    }
+
+    .Item-abstract {
+        left: 55%;
+    }
+
+    .Item-thumbnail {
+        left: 5%;
+    }
+
+    .Item-link {
+        left: 60%;
+    }
+}
+
+.Article
+{
+    width: 100%;
+    height: 100%;
+
+    &-header {
+        height: 15vh;
+    }
+
+    &-title {
+        width: 100%;
+        padding-top: 3vh;
+    }
+
+    &-date {
+        position: absolute;
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    &-github {
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        width: 32px;
+        height: 32px;
+    }
+
+    &-content {
+        padding-top: 5vh;
+    }
+}
+
+.ArticleContent
+{
+    & h1 {
+        width: 100%;
+    }
+
+    & p {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.Footer
+{
+    height: 10vh;
+    width: 85%;
+    left: 15%;
+    position: absolute;
+    bottom: 0;
+
+    & p {
+        height: 5vh;
+        line-height: 5vh;
+    }
+}
+

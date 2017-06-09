@@ -1,15 +1,11 @@
 
 {{ partial "header.html" . }}
 
-<section>
+<section class="Article">
 
-  <h1>{{ .Title }}</h1>
+  {{ partial "section-header.html" . }}
 
-  <article>
-
-    <h4 class="date">
-      {{ .Date.Format "January 01, 2006" }}
-    </h4>
+  <article class="Article-content ArticleContent {{ if eq .Title "About"}}title{{ end }}">
 
     {{ .Content }}
 

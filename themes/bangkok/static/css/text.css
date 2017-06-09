@@ -9,13 +9,57 @@
     src: url('/fonts/Roboto/Roboto-Bold.ttf');
 }
 
+@font-face {
+    font-family: blacksword;
+    src: url('/fonts/Blacksword.otf');
+}
+
+@font-face {
+    font-family: baloo;
+    src: url('/fonts/BalooBhaina-Regular.ttf');
+}
+
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/PressStart2P-Regular.ttf');
+}
+
 body { font-family: Roboto, Arial, FreeSans, sans-serif;}
+
 h1, h2, h3, h4, h5, h6 { color:#333; }
-h1 { font-size: 10em; }
-h2 { font-size: 5em; }
-h3 { font-size: 4em; }
-h4 { font-size: 3em; }
-h5 { font-size: 2em; }
-h6 { font-size: 1em; }
-/*p, h1, h2, h3, h4, h5, h6, ul { margin-bottom: 20px; }*/
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+h1, .h1-font-size { font-size: 4vw; }
+h2, .h2-font-size { font-size: 3vw; }
+h3, .h3-font-size { font-size: 2vw; }
+h4, .h4-font-size { font-size: 1vw; }
+h5, .h5-font-size { font-size: 0.8vw; }
+h6, .h6-font-size { font-size: 0.5vw; }
+
+.link {
+    font-family: baloo;
+    text-align: center;
+}
+
+.title {
+    font-family: pixel;
+    text-align: center;
+}
+
+.text {
+    font-family: Roboto, FreeSans, sans-serif;
+}
+
+.dark-text {
+    color: #3F484C;
+}
+
+.light-text {
+    color: #EEEEFF;
+}
+
+.alt-light-text {
+    color: #FFE6C9;
+}
+
+.alt-light-text {
+    color: #FFB45E;
+}

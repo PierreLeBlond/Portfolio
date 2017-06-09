@@ -1,141 +1,84 @@
-body
+/* Bright orange : #FFB45E */
+/* Light orange  : #FFE6C9 */
+/* Dark blue     : #3F484C */
+
+.light-background
 {
-    background: #333;
+    background-color: #EEEEFF;
 }
 
-header
+.dark-background
 {
-    background-color: #333;
-    box-shadow: 0 0 10px black;
-    z-index: 10;
+    background-color: #3F484C;
 }
 
-.aero
+.alt-light-background
 {
-    border: solid 2px #FF9D2D;
-    /*box-shadow: 0 0 10px #FF9D2D;*/
+    background-color: #FFE6C9;
 }
 
-.profil-picture
+.alt-dark-background
 {
-    border-radius: 60%;
-    background-image: url(/images/profil.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-color: #FFB45E;
 }
 
-.nav-text
-{
-    color: white;
-    font-family: Roboto-Bold;
-    font-size: 2em;
-}
-
-.nav-text p.special-letter
-{
-    color: #FF9D2D;
-    transition: margin-left 0.3s, margin-right 0.3s;
-    transition-timing-function: linear;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-
-.nav-text:hover p.special-letter
-{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-@keyframes jump {
-    0% {bottom: 0vh; animation-timing-function: ease-out;}
-    50% {bottom: 5vh; animation-timing-function: ease-in;}
-    100% {bottom: 0vh;}
-}
-
-.social-icon
+.full-image
 {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.social-link:hover .social-icon
+.round-div
+{
+    border-radius: 60%;
+}
+
+.shadow-div
+{
+    box-shadow: 0 0 10px black;
+}
+
+.aero
+{
+    border: solid 2px #FFB45E;
+}
+
+/* Jump animation, as used for the social link */
+@keyframes jump {
+    0% {bottom: 0vh; animation-timing-function: ease-out;}
+    50% {bottom: 5vh; animation-timing-function: ease-in;}
+    100% {bottom: 0vh;}
+}
+
+.jump-link:hover .jump-content
 {
     animation-name: jump;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+/**********************************************/
 
-.above
+.abstract
 {
-    z-index: 1;
-    box-shadow: 0px 0px 10px black;
-}
-
-.under
-{
-    z-index: 0;
-}
-
-.cover
-{
-    background-image: url(/images/background.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.headline
-{
-    text-shadow: 3px 0 white, -3px 0 white, 0 3px white, 0 -3px white;
-}
-
-.item
-{
-    text-align: center;
-    background: #FF9D2D;
-    box-shadow: 0px 0px 10px black;
-}
-
-.item h1
-{
-    font-size: 15vh;
-}
-
-.item-title h1
-{
-    font-size: 10vh;
-}
-
-.item-abstract
-{
-    color: #222222;
     text-align: left;
+    text-indent: 5%;
 }
 
-.item-thumbnail
+.thumbnail
 {
-    box-shadow: inset 0 0 30px #FF9D2D;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top;
+    /*box-shadow: inset 0 0 30px #333;*/
 }
 
-footer
+.more-link
 {
-    text-align: center;
-    color: white;
-    background-color: #333;
-    box-shadow: 0 0 10px black;
+    border: solid 2px #FFB45E;
+    border-radius: 2px;
 }
 
-footer a
+.more-link:hover
 {
-    color: #AAA;
+    background-color: #FFB45E;
+    border-color: #3F484C;
 }
 
-footer a:hover
-{
-    color: #FF9D2D;
-}

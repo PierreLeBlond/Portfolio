@@ -1,0 +1,18 @@
+<div class="Article-header dark-background shadow-div">
+
+  <h1 class="Article-title title light-text"> {{ .Title }}</h1>
+
+    {{ with .Params.subtitle }}
+    <h4 class="Article-date alt-light-text">
+      {{ . }}
+    </h4>
+    {{ else }}
+    {{ end }}
+
+    {{ with .Params.github }}
+    <a href="https://github.com/PierreLeBlond/{{ . }}" style="background-image: url({{ $.Site.BaseURL }}/images/icon/github-logo.png)" class="Article-github full-image"></a>
+    {{ else }}
+    {{ end }}
+
+</div>
+

@@ -16,58 +16,61 @@
 
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/central.css"/>
     <title>Pierre Lespingal - {{ .Title }}</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
   </head>
 
-  <body>
-    <div id="container">
-      <header>
+  <body class="light-background">
+    <div class="Container">
+      <header class="Container-header Header dark-background shadow-div">
         <div class="ratio-wrapper">
           <div class="ratio-box">
-            <div class="profil-picture aero">
-            </div>
+            <a href="{{ .Site.BaseURL }}">
+              <div class="Header-profilPicture full-image round-div aero" style="background-image: url({{ $.Site.BaseURL }}/images/profil.jpg)">
+              </div>
+            </a>
           </div>
         </div>
 
-        <nav>
-          <ul>
-            <li class="nav-link">
-              <a href="#">
-                <div class="nav-text">
-                  <p></p><p class="special-letter">A</p><p>bout</p>
+        <nav class="Header-nav">
+          <ul class="Nav-ul Nav">
+            <li class="Nav-li NavLink">
+              <a href="{{ .Site.BaseURL }}/article/about" class="NavLink-a link h3-font-size light-text">
+                <div class="NavLink-text">
+                  <p></p><p class="NavLink-specialLetter alt-light-text">A</p><p>bout</p>
                 </div>
               </a>
             </li>
-            <li class="nav-link">
-              <a href="#">
-                <div class="nav-text">
-                  <p>A</p><p class="special-letter">r</p><p>ticles</p>
+            <li class="Nav-li NavLink">
+              <a href="{{ .Site.BaseURL }}/article" class="NavLink-a link h3-font-size light-text">
+                <div class="NavLink-text">
+                  <p>A</p><p class="NavLink-specialLetter alt-light-text">r</p><p>ticles</p>
                 </div>
               </a>
             </li>
-            <li class="nav-link">
-              <a href="#">
-                <div class="nav-text">
-                  <p>Projec</p><p class="special-letter">t</p><p>s</p>
+            <li class="Nav-li NavLink">
+              <a href="{{ .Site.BaseURL }}/project" class="NavLink-a link h3-font-size light-text">
+                <div class="NavLink-text">
+                  <p>Projec</p><p class="NavLink-specialLetter alt-light-text">t</p><p>s</p>
                 </div>
               </a>
             </li>
           </ul>
         </nav>
 
-        <ul class="social-links">
-          <li>
-            <a class="social-link" href="https://github.com/PierreLeBlond/">
-            <div class="social-icon" style="background-image: url({{ $.Site.BaseURL }}/images/icon/github-logo.png"></div>
+        <ul class="Header-socialLinks SocialLinks">
+          <li class="SocialLinks-li">
+            <a class="jump-link" href="https://github.com/PierreLeBlond/">
+            <div class="SocialLinks-icon jump-content full-image" style="background-image: url({{ $.Site.BaseURL }}/images/icon/github-logo.png"></div>
             </a>
           </li>
-          <li>
-            <a class="social-link" href="https://www.linkedin.com/in/pierre-lespingal-497a41a5/">
-            <div class="social-icon" style="background-image: url({{ $.Site.BaseURL }}/images/icon/linkedin-button.png"></div>
+          <li class="SocialLinks-li">
+            <a class="jump-link" href="https://www.linkedin.com/in/pierre-lespingal-497a41a5/">
+            <div class="SocialLinks-icon jump-content full-image" style="background-image: url({{ $.Site.BaseURL }}/images/icon/linkedin-button.png"></div>
             </a>
           </li>
         </ul>
 
       </header>
 
-      <main id="main">
+      <main class="Main">
 

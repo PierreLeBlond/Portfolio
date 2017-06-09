@@ -2,9 +2,11 @@
 date = "2017-04-08T11:27:12+07:00"
 draft = false
 title = "Portfolio"
+subtitle = "Personal Web Site"
 type = "project"
 abstract = "My personal website and portfolio, using Go Hugo as static site generator."
 thumbnail = "portfolio.jpg"
+github = "Portfolio"
 +++
 
 # Go Hugo
